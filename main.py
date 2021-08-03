@@ -63,12 +63,6 @@ def main():
         model = DBPNTrainer(args, training_data_loader, testing_data_loader)
     elif args.model == 'unet':
         model = unetTrainer(args, training_data_loader, testing_data_loader)
-    elif args.model == 'cspn':
-        model = unetcspnTrainer(args, training_data_loader, testing_data_loader)
-    elif args.model == 'irn':
-        model = unetirnTrainer(args, training_data_loader, testing_data_loader)
-    elif args.model == 'dense':
-        model = denseTrainer(args, training_data_loader, testing_data_loader)
     elif args.model == 'bi':
         model = biTrainer(args, training_data_loader, testing_data_loader)
     else:
