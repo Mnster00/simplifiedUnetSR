@@ -13,9 +13,6 @@ from SRGAN.solver import SRGANTrainer
 from SubPixelCNN.solver import SubPixelTrainer
 from VDSR.solver import VDSRTrainer
 from Unet.solver import unetTrainer
-from UnetCSPN.solver import unetcspnTrainer
-from UnetIRN.solver import unetirnTrainer
-from DenseUnet.solver import denseTrainer
 from bicubic.solver import biTrainer
 from dataset.data import get_training_set, get_test_set
 
